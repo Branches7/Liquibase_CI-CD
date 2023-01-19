@@ -36,4 +36,4 @@ jobs:
       - name: Run 'Liquibase update' in a Docker Container
         uses: docker://liquibase/liquibase:latest
         with:
-          args: --url=${{ secrets.SF_URL }} --changelgfle=scripts/masterChangelog.xml --username=${{ secrets.SF_USER }} --password=${{ secrets.SF_PASS }} --loglevel=debug update
+          args: --url=${{ secrets.SF_URL }} --changelogfile=/scripts/masterChangelog.xml --username=${{ secrets.SF_USER }} --password=${{ secrets.SF_PASS }} --loglevel=debug update

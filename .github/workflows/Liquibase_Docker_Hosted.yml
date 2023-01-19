@@ -29,10 +29,10 @@ jobs:
       - name: Run 'Liquibase status' in a Docker Container
         uses: docker://liquibase/liquibase:latest
         with:
-          args: --url-${{ secrets.SF_URL }} --changeLogFile-/scripts/myChangelog.xml --username=${{ secrets.SF_USER }} --password=${{ secrets.SF_PASS }}
+          args: --url=${{ secrets.SF_URL }} --changeLogFile-/scripts/myChangelog.xml --username=${{ secrets.SF_USER }} --password=${{ secrets.SF_PASS }} status
 
       # Runs a set of commands using the runners shell
       - name: Run 'Liquibase update' in a Docker Container
         uses: docker://liquibase/liquibase:latest
         with:
-          args: --url-${{ secrets.SF_URL }} --changeLogFile-/scripts/myChangelog.xml --username=${{ secrets.SF_USER }} --password=${{ secrets.SF_PASS }}
+          args: --url=${{ secrets.SF_URL }} --changeLogFile-/scripts/myChangelog.xml --username=${{ secrets.SF_USER }} --password=${{ secrets.SF_PASS }} --loglevel=debug update

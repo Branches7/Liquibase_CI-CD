@@ -1,6 +1,6 @@
 --liquibase formatted sql
 
---changeset branches:
+--changeset branches:0
 use database DEMO_DB;
 use schema liquibase;
 CREATE TABLE IF NOT EXISTS employees (

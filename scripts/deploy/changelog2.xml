@@ -8,7 +8,7 @@
     http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd ">
 
       <changeSet id="1" author="branches_test" runAlways= "true" dbms="snowflake">
-        <createTable tableName="departament">
+        <createTable tableName="departament2">
             <column name="test_id" type="int">
 				<constraints primaryKey="true" nullable="false"/>
             </column>

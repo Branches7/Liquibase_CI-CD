@@ -1,8 +1,6 @@
 --liquibase formatted sql
 
 --changeset branches:4
-use database DEMO_DB;
-use schema liquibase;
 CREATE or replace TABLE customers (
     customer_id INT PRIMARY KEY,
     first_name VARCHAR(255),

@@ -1,8 +1,6 @@
 --liquibase formatted sql
 
 --changeset branches:
-use database DEMO_DB;
-use schema liquibase;
 CREATE TABLE IF NOT EXISTS employees (
     employee_id INT PRIMARY KEY,
     first_name VARCHAR(255),

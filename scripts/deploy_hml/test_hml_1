@@ -1,0 +1,9 @@
+--liquibase formatted sql
+
+--changeset branches:2
+--comment: test 
+
+create or replace table tb_test_1 (
+    id int primary key,
+    name varchar(50) not null
+)

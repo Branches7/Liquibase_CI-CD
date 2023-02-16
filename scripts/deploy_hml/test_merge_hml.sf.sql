@@ -12,7 +12,7 @@ CREATE OR REPLACE TABLE products (
 CREATE OR REPLACE TABLE orders (
     order_id INT PRIMARY KEY,
     customer_id INT,
-    order_date DATE,
+    order_date DATE
 );
 
 CREATE OR REPLACE TABLE order_items (
